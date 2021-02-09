@@ -16,14 +16,14 @@
 
 package com.google.javascript.refactoring;
 
-import com.google.auto.value.AutoValue;
+//import com.google.auto.value.AutoValue;
 
 /**
  * Class that represents a set of changes to make to the code.
  *
  * @author mknichel@google.com (Mark Knichel)
  */
-@AutoValue
+//@AutoValue
 public abstract class CodeReplacement {
 
   static CodeReplacement create(int startPosition, int length, String newContent) {
@@ -31,7 +31,7 @@ public abstract class CodeReplacement {
   }
 
   static CodeReplacement create(int startPosition, int length, String newContent, String sortKey) {
-    return new AutoValue_CodeReplacement(startPosition, length, newContent, sortKey);
+    return null;//new AutoValue_CodeReplacement(startPosition, length, newContent, sortKey);
   }
 
   /**

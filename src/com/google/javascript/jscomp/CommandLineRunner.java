@@ -1737,9 +1737,10 @@ public class CommandLineRunner extends
     if (isInTestMode()) {
       return externs;
     } else {
-      List<SourceFile> builtinExterns = getBuiltinExterns(options.getEnvironment());
-      builtinExterns.addAll(externs);
-      return builtinExterns;
+      // List<SourceFile> builtinExterns = getBuiltinExterns(options.getEnvironment());
+      // builtinExterns.addAll(externs);
+      // return builtinExterns;
+      return externs;
     }
   }
 
